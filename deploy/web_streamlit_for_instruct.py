@@ -255,7 +255,7 @@ def combine_history(prompt):
 def main(model_name_or_path, adapter_name_or_path):
     # torch.cuda.empty_cache()
     print('load model...')
-    model, tokenizer = load_model(model_name_or_path, adapter_name_or_path=adapter_name_or_path, load_in_4bit=False)
+    model, tokenizer = load_model(model_name_or_path, adapter_name_or_path=adapter_name_or_path, load_in_4bit=True)
     print('load model end.')
 
     st.title('Llama3-Chinese')
